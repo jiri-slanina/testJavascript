@@ -12,7 +12,7 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){
     let input = document.getElementById("hesloInput").value;
 
     if(input === heslo){
-        document.getElementById("vysledek").innerHTML =`Zadali jste správné heslo <br>😊 <br>`
+        document.getElementById("vysledek").innerHTML =`Zadali jste správné heslo <br>😊`
         document.getElementById("vysledek").style.color = "green"
 
         setTimeout(function(){
