@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+
+}
+
+
+/*
+        HEADER
+                */
+.hlavicka{
+    text-align: center;
+    background-color: #52796f;
+    height: auto;
+    line-height: 4vw;
+}
+
+@media(max-width: 1000px){
+    .hlavicka{
+        width: 100%;
+        line-height: 40px;
+    }
+}
+
+.hlavicka h1{
+    font-size: clamp(10px, 2vw, 38px);
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/*
+        */
+
+
+/*
+        MAIN
+                */
+
+.otazky{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/pozadi.jpg);
+}
+
+.otazky h1,
+.otazky h2,
+.otazky h3,
+.otazky h4,
+.otazky h5{
+    color: #fff;
+}
+
+
+.section_3{
+    text-align: center;
+}
+
+.section_3 h1,
+.section_3 h2,
+.section_3 h3,
+.section_3 h4,
+.section_3 h5{
+    color: #000;
+}
+
+
+
+
+
+.prihlasovaci_okno{
+    width: 25vw;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #52796f;
+}
+
+.prihlasovaci_okno input{
+    padding: 0.2vw 0.5vw;
+    text-align: center;
+}
+
+#vysledek {
+    margin: 20px auto;
+    font-weight: bold;
+    color: red;
+}
+
+
+#kontrolaBtn{
+    padding: 0.4vw 0.6vw;
+    margin-top: 1vw;
+    border-radius: 0.4vw;
+}
+
+.napovedy{
+    display: flex;
+    justify-content: space-around;
+}
+
+#napoveda1{
+    display: block;
+}

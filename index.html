@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WoodWork - JS</title>
+</head>
+<body>
+    <header>
+        <div class="hlavicka">
+            <h1>WoodWork - J.S</h1>
+        </div>
+    </header>
+
+
+    <main>
+        <br><hr><br>
+        <div class="slot_1"></div>
+            <div class="otazky">
+                <div class="section_1">
+                    <h1>Nadpis 1</h1>
+                    <h2>Nadpis 2</h2>
+                    <h3>Nadpis 3</h3>
+                    <h4>Nadpis 4</h4>
+                    <h5>Nadpis 5</h5>
+                </div>
+
+                <div class="section_2">
+                    <h1>Nadpis 1</h1>
+                    <h2>Nadpis 2</h2>
+                    <h3>Nadpis 3</h3>
+                    <h4>Nadpis 4</h4>
+                    <h5>Nadpis 5</h5>
+                </div>
+            </div>
+
+            <div class="section_3">
+                <h1>Nadpis 1</h1>
+                <h2>Nadpis 2</h2>
+                <h3>Nadpis 3</h3>
+                <h4>Nadpis 4</h4>
+                <h5>Nadpis 5</h5>
+            </div>
+        </div>
+
+        <br><hr>
+        <br><hr><br>
+        <div class="prihlasovaci_okno">
+            <h2>Zadejte 4-místné heslo:</h2>
+            <input type="text" id="hesloInput" placeholder=""> <br>
+            <button id="kontrolaBtn">Ověřit</button>
+
+            <div id="vysledek"></div>
+            <div class="napovedy">
+                
+                <button onclick="zobrazNapovedu1()">Nápověda 1</button>
+                <p id="napoveda1"></p>
+
+                <button onclick="zobrazNapovedu2()">Nápověda 2</button>
+                <p id="napoveda2"></p>
+
+                <button onclick="zobrazNapovedu3()">Nápověda 3</button>
+                <p id="napoveda3"></p>
+
+                <button onclick="zobrazNapovedu4()">Nápověda 4</button>
+                <p id="napoveda4"></p>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
