@@ -21,7 +21,7 @@ function zobrazNapovedu1(){
 
 
 function zobrazNapovedu2() {
-    document.getElementById("napoveda2").innerHTML = "Kolik je 150-140?"
+    document.getElementById("napoveda2").innerHTML = "Kolik je 150-145?"
 }
 
 function zobrazNapovedu3() {
