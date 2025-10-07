@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6c757d;
+}
+
+body img{
+    display: block;
+    margin: 5vw auto;
+    width: 30vw;
+    border-radius: 2vw;
+}

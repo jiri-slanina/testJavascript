@@ -12,8 +12,13 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){
     let input = document.getElementById("hesloInput").value;
 
     if(input === heslo){
-        document.getElementById("vysledek").innerHTML =`Zadali jste správné heslo <br> Můžete vstoupit.😊 <br><img src="img/200w.gif" alt="">`
+        document.getElementById("vysledek").innerHTML =`Zadali jste správné heslo <br> Můžete vstoupit😊 <br>`
         document.getElementById("vysledek").style.color = "green"
+
+        setTimeout(function(){
+            window.location.href = "accept.html"
+        }, 2000)
+
     } else {
         document.getElementById("vysledek").textContent = "Zadali jste chybné heslo."
         document.getElementById("vysledek").style.color = "red"
