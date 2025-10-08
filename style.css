@@ -132,7 +132,8 @@ body{
 
 
 .napoveda_blok p{
-    font-size: clamp(8px, 1.2vw, 16px);
+    font-size: clamp(10px, 1.2vw, 18px);
+    margin-top: 1vw;
 }
 
 @media(max-width: 500px){
