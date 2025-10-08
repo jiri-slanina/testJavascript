@@ -78,7 +78,7 @@ body{
 .prihlasovaci_okno{
     width: 60vw;
     text-align: center;
-    margin: 2vw auto;
+    margin: 5vw auto;
     padding: 2vw ;
     border: 3px solid #52796f;
 }
@@ -147,9 +147,8 @@ body{
             */
 
 .kalendar{
-    margin-top: 5vw;
     width: 60%;
-    margin: 0 auto;
+    margin: 10vw auto;
     text-align: center;
     border: 3px solid #52796f;
     padding: 2vw;
