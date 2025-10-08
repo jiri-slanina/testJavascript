@@ -32,7 +32,7 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){
             jednotlivé funkce tlačítka nápovědy
         */
 function zobrazNapovedu1(){
-    document.getElementById("napoveda1").innerHTML = "Kolik je 20/10?"
+    document.getElementById("napoveda1").innerHTML = "Kolik je 20:10?"
 }
 
 function zobrazNapovedu2() {
