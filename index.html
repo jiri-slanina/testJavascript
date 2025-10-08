@@ -51,27 +51,31 @@
             <input type="text" id="hesloInput" placeholder=""> <br>
             <button id="kontrolaBtn">Ověřit</button>
 
+<!--(ulozny prostor kam se vypíše zpráva z JS)-->
             <div id="vysledek"></div>
+
+<!--cela sekce tlačítek nápovědy-->
             <div class="napovedy">
                 
+<!--nápověda tlačítko č. 1-->
                 <div class="napoveda_blok">
                     <button onclick="zobrazNapovedu1()"><span class="zmizet">Nápověda</span> 1</button>
                     <p id="napoveda1"></p>
                     <button style="display: none;" id="smazat1" onclick="smazatNap1()">Skrýt</button>
                 </div>
-
+<!--nápověda tlačítko č. 2-->
                 <div class="napoveda_blok">
                     <button onclick="zobrazNapovedu2()"><span class="zmizet">Nápověda</span> 2</button>
                     <p id="napoveda2"></p>
                     <button style="display: none;" id="smazat2" onclick="smazatNap2()">Skrýt</button>
                 </div>
-
+<!--nápověda tlačítko č. 3-->
                 <div class="napoveda_blok">
                     <button onclick="zobrazNapovedu3()"><span class="zmizet">Nápověda</span> 3</button>
                     <p id="napoveda3"></p>
                     <button style="display: none;" id="smazat3" onclick="smazatNap3()">Skrýt</button>
                 </div>
-
+<!--nápověda tlačítko č. 4-->
                 <div class="napoveda_blok">
                     <button onclick="zobrazNapovedu4()"><span class="zmizet">Nápověda</span> 4</button>
                     <p id="napoveda4"></p>
@@ -82,7 +86,7 @@
 
 
 
-
+<!--sekce pondělí v kalendářu-->
         <div class="kalendar">
             <h2 class="nadpisKalendar">Kalendář</h2> <hr>
             <div class="po">
@@ -93,7 +97,7 @@
             </div>
 
 
-
+<!--sekce úterý v kalendářu-->
             <div class="ut">
                 <button onclick="zobrazUtery()">Úterý</button>
                     <p id="utery"></p>
@@ -102,7 +106,7 @@
             </div>
 
 
-
+<!--sekce středa v kalendářu-->
             <div class="str">
                 <button onclick="zobrazStredu()">Středa</button>
                     <p id="streda"></p>
@@ -111,7 +115,7 @@
             </div>
 
 
-
+<!--sekce čtvrtek v kalendářu-->
             <div class="ct">
                 <button onclick="zobrazCtvrtek()">Čtvrtek</button>
                     <p id="ctvrtek"></p>
@@ -120,7 +124,7 @@
             </div>
 
 
-
+<!--sekce pátek v kalendářu-->
             <div class="pa">
                 <button onclick="zobrazPatek()">Pátek</button>
                     <p id="patek"></p>
