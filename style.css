@@ -180,6 +180,6 @@ body{
 }
 
 .kalendar p{
-    font-size: clamp(10px, 2vw, 30px);
+    font-size: clamp(14px, 2vw, 30px);
 }
 
