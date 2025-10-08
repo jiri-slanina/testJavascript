@@ -78,7 +78,8 @@ body{
 .prihlasovaci_okno{
     width: 60vw;
     text-align: center;
-    margin: 0 auto;
+    margin: 2vw auto;
+    padding: 2vw ;
     border: 3px solid #52796f;
 }
 
@@ -117,8 +118,18 @@ body{
 
 .napoveda_blok button{
     width: 10vw;
+    padding: 0.2vw;
+    border-radius: 0.3vw;
     font-size: clamp(10px, 1.2vw, 16px);
+    background-color: #52796f;
+    color: #fff;
+    transition: background 0.6s;
 }
+
+.napoveda_blok button:hover{
+    background-color: #52796fa1;
+}
+
 
 .napoveda_blok p{
     font-size: clamp(8px, 1.2vw, 16px);
