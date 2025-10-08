@@ -85,6 +85,7 @@ body{
     margin: 5vw auto;
     padding: 2vw ;
     border: 3px solid #52796f;
+    border-radius: 2vw;
 }
 
 /*  velikostText / text- Zadejte 4.místný kod*/
@@ -168,6 +169,9 @@ body{
     }
 }
 
+
+
+
 /*
     KALENDÁŘ
             */
@@ -178,6 +182,7 @@ body{
     margin: 2vw auto;
     text-align: center;
     border: 3px solid #52796f;
+    border-radius: 2vw;
     padding: 2vw;
 }
 
@@ -188,9 +193,10 @@ body{
     }
 }
 
+
 /*  text Motivační kalendář (nadpis)*/
 .nadpisKalendar{
-    font-size: clamp(20px, 2.5vw, 50px);
+    font-size: clamp(18px, 2.5vw, 40px);
     letter-spacing: 4px;
     color: #fff;
     background-color: #0000009c;
