@@ -6,20 +6,21 @@
     první odstavec kontrolaBtn řekne, že má po kliknutí provést / zkontrolvat a vypsat následující kod pod ním.
 */
 
-let heslo = "2589";
+let heslo = "2589"; //heslo které bude požadováno
 
-document.getElementById("kontrolaBtn").addEventListener("click", function(){
+document.getElementById("kontrolaBtn").addEventListener("click", function(){ // tady mi po kliknutí na tlacitko udela nasledujici
     let input = document.getElementById("hesloInput").value;
-
-    if(input === heslo){
+// uložena proměnná input - hesloInput
+    if(input === heslo){ // čisla input + heslo musí být stejné
         document.getElementById("vysledek").innerHTML =`Zadali jste správné heslo <br>😊`
         document.getElementById("vysledek").style.color = "green"
-
+//zobrazi zpravu o spravnem hesle
+//napis se zobrazi zelenou barvou
         setTimeout(function(){
             window.location.href = "accept.html"
-        }, 1000)
+        }, 1000) //přehodí na jinou stranku .html po zadani spravneho hesla
 
-    } else {
+    } else { // kdyz se heslo neshoduje - vypíše
         document.getElementById("vysledek").textContent = "Zadali jste chybné heslo."
         document.getElementById("vysledek").style.color = "red"
     }
@@ -32,36 +33,39 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){
             jednotlivé funkce tlačítka nápovědy
         */
 
-function zobrazNapovedu1(){
-    document.getElementById("napoveda1").innerHTML = "Kolik je 20:10?"
+function zobrazNapovedu1(){ //nazev funkce
+    document.getElementById("napoveda1").innerHTML = "Kolik je 20:10?" //funkce vypíše po kliknutí na tlačítko
 
     document.getElementById("smazat1").style.display = "none"
     document.getElementById("smazat1").style.display = "block"
-}
+}// tato funkce mi skryje talčítko smazat Napovedu
 
 function smazatNap1() {
     document.getElementById("napoveda1").innerHTML = ""
-
+// toto tlačítko smaže text <p> nápovědy
     document.getElementById("smazat1").style.display = "block"
     document.getElementById("smazat1").style.display = "none"
-}
+}// tyto 2 tlačítko opět skryjí tlačítko po kliknutí
 
 /*--------------------------------
 */
 
-function zobrazNapovedu2() {
+function zobrazNapovedu2() {//nazev funkce
     document.getElementById("napoveda2").innerHTML = "Kolik je 150-145?"
+    //funkce vypíše po kliknutí na tlačítko
 
     document.getElementById("smazat2").style.display = "none"
     document.getElementById("smazat2").style.display = "block"
-}
+}// tato funkce mi skryje talčítko smazat Napovedu
+
 
 function smazatNap2() {
     document.getElementById("napoveda2").innerHTML = ""
+    // toto tlačítko smaže text <p> nápovědy
 
     document.getElementById("smazat2").style.display = "block"
     document.getElementById("smazat2").style.display = "none"
-}
+}// tyto 2 tlačítko opět skryjí tlačítko po kliknutí
 
 
 /*---------------------------------
