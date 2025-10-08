@@ -51,12 +51,90 @@ function zobrazNapovedu4() {
 
 
 
+/*
+        KALENDÁŘ    
+    */
+
+        /*  PONDĚLÍ */
+function zobrazPondeli() {
+    document.getElementById("pondeli").innerHTML = "😊Nový týden, nová šance něco změnit. 💪 <br> Začni v klidu a s úsměvem.😊"
+
+    document.getElementById("skrytBtn_Po").style.display = "none"
+    document.getElementById("skrytBtn_Po").style.display = "block"
+}
+
+function skrytPondeli() {
+    document.getElementById("pondeli").innerHTML = ""
+
+    document.getElementById("skrytBtn_Po").style.display = "block"
+    document.getElementById("skrytBtn_Po").style.display = "none"
+}
+/*---------------------------------------*/
+
+
+
+        /*  Úterý    */
+function zobrazUtery() {
+    document.getElementById("utery").innerHTML ="Dnes už to máš rozjeté! 🚀 <br> Pokračuj, jsi v tempu."
+
+    document.getElementById("skrytBtn_Ut").style.display = "none"
+    document.getElementById("skrytBtn_Ut").style.display = "block"
+}
+
+function skrytUtery() {
+    document.getElementById("utery").innerHTML = ""
+
+    document.getElementById("skrytBtn_Ut").style.display = "block"
+    document.getElementById("skrytBtn_Ut").style.display = "none"
+}
+
+
+        /*  STŘEDA  */
+function zobrazStredu() {
+    document.getElementById("streda").innerHTML ="Polovina týdne! 👌 Je čas se trochu pochválit, ale ještě nekončíme."
+
+    document.getElementById("skrytBtn_Str").style.display = "none"
+    document.getElementById("skrytBtn_Str").style.display = "block"
+}
+
+function skrytStredu() {
+    document.getElementById("streda").innerHTML = ""
+
+    document.getElementById("skrytBtn_Str").style.display = "block"
+    document.getElementById("skrytBtn_Str").style.display = "none"
+}
+
+
+
+        /*  ČTVRTEK */
+function zobrazCtvrtek() {
+    document.getElementById("ctvrtek").innerHTML = "Už to skoro vidíš — víkend se blíží! <br> 😎 Drž se, jsi skoro v cíli."
+
+    document.getElementById("skrytBtn_Ct").style.display = "none"
+    document.getElementById("skrytBtn_Ct").style.display = "block"
+}
+
+function skrytCtvrtek() {
+    document.getElementById("ctvrtek").innerHTML = ""
+
+    document.getElementById("skrytBtn_Ct").style.display = "block"
+    document.getElementById("skrytBtn_Ct").style.display = "none"
+}
 
 
 
 
+        /*  PÁTEK   */
+function zobrazPatek() {
+    document.getElementById("patek").innerHTML = "Skvělá práce celý týden! 🎉 <br> Dnes už jen v klidu dokonči, co je třeba.😋"
 
+    document.getElementById("skrytBtn_Pa").style.display = "none"
+    document.getElementById("skrytBtn_Pa").style.display = "block"
+}
 
+function skrytPatek() {
+    document.getElementById("patek").innerHTML = ""
 
-
-
+    document.getElementById("skrytBtn_Pa").style.display = "block"
+    document.getElementById("skrytBtn_Pa").style.display = "none"
+}
