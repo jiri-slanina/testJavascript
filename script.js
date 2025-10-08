@@ -31,20 +31,73 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){
 /*
             jednotlivé funkce tlačítka nápovědy
         */
+
 function zobrazNapovedu1(){
     document.getElementById("napoveda1").innerHTML = "Kolik je 20:10?"
+
+    document.getElementById("smazat1").style.display = "none"
+    document.getElementById("smazat1").style.display = "block"
 }
+
+function smazatNap1() {
+    document.getElementById("napoveda1").innerHTML = ""
+
+    document.getElementById("smazat1").style.display = "block"
+    document.getElementById("smazat1").style.display = "none"
+}
+
+/*--------------------------------
+*/
 
 function zobrazNapovedu2() {
     document.getElementById("napoveda2").innerHTML = "Kolik je 150-145?"
+
+    document.getElementById("smazat2").style.display = "none"
+    document.getElementById("smazat2").style.display = "block"
 }
+
+function smazatNap2() {
+    document.getElementById("napoveda2").innerHTML = ""
+
+    document.getElementById("smazat2").style.display = "block"
+    document.getElementById("smazat2").style.display = "none"
+}
+
+
+/*---------------------------------
+*/
+
 
 function zobrazNapovedu3() {
     document.getElementById("napoveda3").innerHTML = "Kolik je 224:28?"
+
+    document.getElementById("smazat3").style.display = "none"
+    document.getElementById("smazat3").style.display = "block"
 }
+
+function smazatNap3() {
+    document.getElementById("napoveda3").innerHTML = ""
+
+    document.getElementById("smazat3").style.display = "block"
+    document.getElementById("smazat3").style.display = "none"
+}
+/*---------------------------------
+*/
+
+
 
 function zobrazNapovedu4() {
     document.getElementById("napoveda4").innerHTML = "Kolik je 108:12?"
+
+    document.getElementById("smazat4").style.display = "none"
+    document.getElementById("smazat4").style.display = "block"
+}
+
+function smazatNap4() {
+    document.getElementById("napoveda4").innerHTML = ""
+
+    document.getElementById("smazat4").style.display = "block"
+    document.getElementById("smazat4").style.display = "none"
 }
 /*  --------------------------------------------
 */
