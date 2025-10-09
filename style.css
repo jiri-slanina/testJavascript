@@ -108,6 +108,7 @@ body{
     margin: 20px auto;
     font-weight: bold;
     color: red;
+    font-size: clamp(12px, 2vw, 30px);
 }
 
 /* tlačítko ověřit, který ověří hodnotu z inputu*/
@@ -314,8 +315,50 @@ body{
     color: #fff;
 }
 
+
+
 /*  
                 MAIN
-    VSTUPNI KOD OD DVERI DO ZAMESTANI
-                                        */
+            PÁTRACÍ APLIKACE
+                             */
+
+.patraci_aplikace{
+    width: 40vw;
+    margin: 2vw auto;
+    text-align: center;
+    border: 3px solid #52796f;
+    border-radius: 1vw;
+}
+
+.patraci_aplikace h1{
+    font-size: clamp(20px, 2.2vw, 36px);
+}
+
+.patraci_aplikace input{
+    width: 10vw;
+    margin-top: 2vw;
+    text-align: center;
+    line-height: 2vw;
+    font-size: clamp(14px, 1.8vw, 22px);;
+}
+
+#kontrola_tl{
+    background-color: #52796f;
+    color: #fff;
+    margin-top: 1vw;
+    padding: 0.2vw 0.4vw;
+    cursor: pointer;
+    border-radius: 1vw;
+    line-height: 1vw;
+}
+
+#kontrola_tl:hover{
+    background-color: #549283c7;
+}
+
+#vysledek_ap{
+    font: bold;
+    margin-top: 2vw;
+    font-size: clamp(16px, 2vw, 28px);
+}
 

@@ -21,7 +21,7 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){ // 
         }, 1000) //přehodí na jinou stranku .html po zadani spravneho hesla
 
     } else { // kdyz se heslo neshoduje - vypíše
-        document.getElementById("vysledek").textContent = "Zadali jste chybné heslo."
+        document.getElementById("vysledek").textContent = "Zadali jste chybné heslo.😞"
         document.getElementById("vysledek").style.color = "red"
     }
 })
@@ -71,7 +71,7 @@ function smazatNap2() {
 /*---------------------------------
 */
 
-
+/* funkce tlačítka nápovědy č.3*/
 function zobrazNapovedu3() {
     document.getElementById("napoveda3").innerHTML = "Kolik je 224:28?"
 
@@ -79,6 +79,7 @@ function zobrazNapovedu3() {
     document.getElementById("smazat3").style.display = "block"
 }
 
+/* tlačítko nápovědy pro skrytí*/
 function smazatNap3() {
     document.getElementById("napoveda3").innerHTML = ""
 
@@ -89,7 +90,7 @@ function smazatNap3() {
 */
 
 
-
+/* funkce tlačítka nápovědy č. 4*/
 function zobrazNapovedu4() {
     document.getElementById("napoveda4").innerHTML = "Kolik je 108:12?"
 
@@ -97,6 +98,7 @@ function zobrazNapovedu4() {
     document.getElementById("smazat4").style.display = "block"
 }
 
+/* tlačítko nápovědy pro skrytí*/
 function smazatNap4() {
     document.getElementById("napoveda4").innerHTML = ""
 
@@ -195,3 +197,24 @@ function skrytPatek() {
     document.getElementById("skrytBtn_Pa").style.display = "block"
     document.getElementById("skrytBtn_Pa").style.display = "none"
 }
+
+
+
+/*  
+            PÁTRACÍ APLIKACE    */
+
+let height = "90";
+let hight = "178";
+
+document.getElementById("kontrola_tl").addEventListener ("click", function(){
+    let input_1 = document.getElementById("vyska").value
+    let input_2 = document.getElementById("vaha").value
+
+    if(input_1 === hight && input_2 === height){
+        document.getElementById("vysledek_ap").innerHTML = "Tato osoba je v evidenci hledaných osob."
+        document.getElementById("vysledek_ap").style.color = "red"
+    } else{
+        document.getElementById("vysledek_ap").innerHTML = "Tato osoba není v evidenci hledaných osob."
+        document.getElementById("vysledek_ap").style.color = "blue"
+    }
+})
