@@ -321,7 +321,7 @@ body{
                 MAIN
             PÁTRACÍ APLIKACE
                              */
-
+/* box pátrací aplikace*/
 .patraci_aplikace{
     width: 40vw;
     margin: 2vw auto;
@@ -330,10 +330,17 @@ body{
     border-radius: 1vw;
 }
 
+/*  nadpis pátrací aplikace*/
 .patraci_aplikace h1{
     font-size: clamp(20px, 2.2vw, 36px);
 }
 
+.patraci_aplikace h5{
+    font-size: clamp(12px, 1.5vw, 18px);
+    color: #343a4086;
+}
+
+/*  input (zadávaná hodnota)    */
 .patraci_aplikace input{
     width: 10vw;
     margin-top: 2vw;
@@ -342,6 +349,7 @@ body{
     font-size: clamp(14px, 1.8vw, 22px);;
 }
 
+/*  tlacitko overit hodnoty z inputu    */
 #kontrola_tl{
     background-color: #52796f;
     color: #fff;
@@ -352,13 +360,16 @@ body{
     line-height: 1vw;
 }
 
+/*  tlačítko overit hodnoty z inputu / změna po najetí myší*/
 #kontrola_tl:hover{
     background-color: #549283c7;
 }
 
+/*  výsledek po ověření hodnot z inputu*/
 #vysledek_ap{
     font: bold;
     margin-top: 2vw;
     font-size: clamp(16px, 2vw, 28px);
 }
 
+/*  KONEC PÁTRACÍ APLIKACE*/

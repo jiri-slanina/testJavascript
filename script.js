@@ -122,6 +122,7 @@ function zobrazPondeli() {
     document.getElementById("skrytBtn_Po").style.display = "block"
 }
 
+/*  funkce skrytí tlačítka a vymazaní původního obsahu  */
 function skrytPondeli() {
     document.getElementById("pondeli").innerHTML = ""
 
@@ -140,6 +141,7 @@ function zobrazUtery() {
     document.getElementById("skrytBtn_Ut").style.display = "block"
 }
 
+/*  funkce skrytí tlačítka a vymazaní původního obsahu  */
 function skrytUtery() {
     document.getElementById("utery").innerHTML = ""
 
@@ -156,6 +158,7 @@ function zobrazStredu() {
     document.getElementById("skrytBtn_Str").style.display = "block"
 }
 
+/*  funkce skrytí tlačítka a vymazaní původního obsahu  */
 function skrytStredu() {
     document.getElementById("streda").innerHTML = ""
 
@@ -173,6 +176,7 @@ function zobrazCtvrtek() {
     document.getElementById("skrytBtn_Ct").style.display = "block"
 }
 
+/*  funkce skrytí tlačítka a vymazaní původního obsahu  */
 function skrytCtvrtek() {
     document.getElementById("ctvrtek").innerHTML = ""
 
@@ -191,6 +195,7 @@ function zobrazPatek() {
     document.getElementById("skrytBtn_Pa").style.display = "block"
 }
 
+/*  funkce skrytí tlačítka a vymazaní původního obsahu  */
 function skrytPatek() {
     document.getElementById("patek").innerHTML = ""
 
