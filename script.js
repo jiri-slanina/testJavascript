@@ -208,8 +208,8 @@ function skrytPatek() {
 /*  
             PÁTRACÍ APLIKACE    */
 
-let height = ["90", "80", "70", "75"];
-let hight = ["178", "170", "180", "190"];
+let height = ["90", "80", "70", "75", "60"];
+let hight = ["178", "170", "180", "190", "173"];
 
 document.getElementById("kontrola_tl").addEventListener ("click", function(){
     let input_1 = document.getElementById("vyska").value
@@ -225,10 +225,10 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
     }
 
     if(nalezeno){
-        document.getElementById("vysledek_ap").innerHTML = "Tato osoba je v evidenci hledaných osob."
+        document.getElementById("vysledek_ap").innerHTML = "😜Jste v Evidenci hledaných osob.😜"
         document.getElementById("vysledek_ap").style.color = "red"
     } else{
-        document.getElementById("vysledek_ap").innerHTML = "Tato osoba není v evidenci hledaných osob."
+        document.getElementById("vysledek_ap").innerHTML = "😍Nejste v Evidenci hledaných osob.😍"
         document.getElementById("vysledek_ap").style.color = "blue"
     }
 });
@@ -236,15 +236,24 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
 /*-----------------------------------------------------*/
 
 
-/*
-            GALERIE
-                    */
+/* 
+    KONTROLA VĚKU - APLIKACE 
+                            */
 
-// let img = document.getElementById("obrazek_1");
+    document.getElementById("overit_vek").addEventListener("click", function(){
+        let input = document.getElementById("zadej_vek").value;
 
-// img.onclick = function(){
+        if(input <= 17){
+            document.getElementById("text_overeni").innerHTML = `Vstup zamítnut <br> Nejste plnoletý`
+            document.getElementById("text_overeni").style.color = "red"
+            document.getElementById("text_overeni").style.border = "3px solid red"
+        } else{
+            document.getElementById("text_overeni").innerHTML = `Víteje u obsahu 18+`;
+            document.getElementById("text_overeni").style.color = "green"
+            document.getElementById("text_overeni").style.border = "3px solid green"
+        }
+    });
 
-//     img.style.height = "auto";
-//     img.style.width = img.width + "500px";
-// }
+    /*  KONEC KONTROLY VĚKU */
 
+    

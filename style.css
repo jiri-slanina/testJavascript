@@ -161,7 +161,7 @@ body{
 
 /* text <p> který vypíše text po kliknutí tlačítka*/
 .napoveda_blok p{
-    font-size: clamp(10px, 1.2vw, 18px);
+    font-size: clamp(10px, 1.5vw, 22px);
     margin-top: 1vw;
 }
 
@@ -172,8 +172,68 @@ body{
     }
 }
 
+#smazat1{
+    font-size: clamp(8px, 1.5vw, 20vw);
+    padding: 0.2vw 0.5vw;
+    width: 8vw;
+    margin: auto;
+    background-color: silver;
+    color: #000000b7;
+    transition: background 0.7s, color 0.7s;
+}
+
+#smazat1:hover{
+    background-color: #52796f;
+    color: #fff;
+}
 
 
+#smazat2{
+    font-size: clamp(8px, 1.5vw, 20vw);
+    padding: 0.2vw 0.5vw;
+    width: 8vw;
+    margin: auto;
+    background-color: silver;
+    color: #000000b7;
+    transition: background 0.7s, color 0.7s;
+}
+
+#smazat2:hover{
+    background-color: #52796f;
+    color: #fff;
+}
+
+
+#smazat3{
+    font-size: clamp(8px, 1.5vw, 20vw);
+    padding: 0.2vw 0.5vw;
+    width: 8vw;
+    margin: auto;
+    background-color: silver;
+    color: #000000b7;
+    transition: background 0.7s, color 0.7s;
+}
+
+#smazat3:hover{
+    background-color: #52796f;
+    color: #fff;
+}
+
+
+#smazat4{
+    font-size: clamp(7px, 1.5vw, 20vw);
+    padding: 0.2vw 0.5vw;
+    width: 8vw;
+    margin: auto;
+    background-color: silver;
+    color: #000000b7;
+    transition: background 0.7s, color 0.7s;
+}
+
+#smazat4:hover{
+    background-color: #52796f;
+    color: #fff;
+}
 
 /*
     KALENDÁŘ
@@ -356,10 +416,17 @@ body{
     background-color: #52796f;
     color: #fff;
     margin-top: 1vw;
-    padding: 1.8vw 2vw;
+    padding: 1vw 2vw;
     cursor: pointer;
     border-radius: 1vw;
     line-height: 1vw;
+}
+
+/*  zvětšení paddingu u tlačítka ověřit při dosažení 500px a méně*/
+@media(max-width: 500px) {
+    #kontrola_tl {
+        padding: 1.8vw 2.2vw;
+    }
 }
 
 /*  tlačítko overit hodnoty z inputu / změna po najetí myší*/
@@ -379,13 +446,45 @@ body{
 
 /*
             MAIN
-            GALERIE 
-                        */
+        AP - KONTROLA VĚKU
+                            */
 
-/* .galerie{
-    display: flex;
-    justify-content: space-around;
-    background-color: #52796f;
-    margin-top: 2vw;
+.kontrola_veku{
+    width: 40vw;
+    margin: 2vw auto;
+    text-align: center;
+    border: 3px solid #52796f;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+}
+
+.kontrola_veku h1{
+    font-size: clamp(20px, 2.2vw, 36px);
     margin-bottom: 2vw;
-} */
+}
+
+.kontrola_veku input{
+    width: 8vw;
+    padding: 0.3vw 0.8vw;
+    text-align: center;
+    font-size: clamp(16px, 2vw, 26px);
+}
+
+.kontrola_veku button{
+    padding: 0.3vw 0.8vw;
+    font-size: clamp(8px, 2vw, 20px);
+    border-radius: 10px;
+    transition: background 0.6s, color 0.6s;
+}
+
+.kontrola_veku button:hover{
+    background-color: #52796f;
+    color: #fff;
+}
+
+#text_overeni{
+    width: 15vw;
+    margin: 1vw auto;
+    font-size: clamp(16px, 2.2vw, 26px);
+
+}
