@@ -208,8 +208,8 @@ function skrytPatek() {
 /*  
             PÁTRACÍ APLIKACE    */
 
-let height = ["90", "80", "70", "75", "60"];
-let hight = ["178", "170", "180", "190", "173"];
+let height = ["90", "80", "70", "75", "60", "50", "55" ];
+let hight = ["178", "170", "180", "190", "173", "150", "160"];
 
 document.getElementById("kontrola_tl").addEventListener ("click", function(){
     let input_1 = document.getElementById("vyska").value
@@ -227,10 +227,19 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
     if(nalezeno){
         document.getElementById("vysledek_ap").innerHTML = "😜Jste v Evidenci hledaných osob.😜"
         document.getElementById("vysledek_ap").style.color = "red"
+
+        setTimeout(function() {
+            document.getElementById("vysledek_ap").innerHTML = ""
+        }, 1000);
+
     } else{
         document.getElementById("vysledek_ap").innerHTML = "😍Nejste v Evidenci hledaných osob.😍"
         document.getElementById("vysledek_ap").style.color = "blue"
     }
+
+    setTimeout(function() {
+            document.getElementById("vysledek_ap").innerHTML = ""
+        }, 1000);
 });
 
 /*-----------------------------------------------------*/
