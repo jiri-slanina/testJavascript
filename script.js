@@ -208,18 +208,43 @@ function skrytPatek() {
 /*  
             PÁTRACÍ APLIKACE    */
 
-let height = "90";
-let hight = "178";
+let height = ["90", "80", "70", "75"];
+let hight = ["178", "170", "180", "190"];
 
 document.getElementById("kontrola_tl").addEventListener ("click", function(){
     let input_1 = document.getElementById("vyska").value
     let input_2 = document.getElementById("vaha").value
 
-    if(input_1 === hight && input_2 === height){
+    let nalezeno = false;
+
+    for(let i = 0; i < hight.length; i++) {
+        if (input_1 === hight[i] && input_2 === height[i]) {
+            nalezeno = true
+            break
+        }
+    }
+
+    if(nalezeno){
         document.getElementById("vysledek_ap").innerHTML = "Tato osoba je v evidenci hledaných osob."
         document.getElementById("vysledek_ap").style.color = "red"
     } else{
         document.getElementById("vysledek_ap").innerHTML = "Tato osoba není v evidenci hledaných osob."
         document.getElementById("vysledek_ap").style.color = "blue"
     }
-})
+});
+
+/*-----------------------------------------------------*/
+
+
+/*
+            GALERIE
+                    */
+
+// let img = document.getElementById("obrazek_1");
+
+// img.onclick = function(){
+
+//     img.style.height = "auto";
+//     img.style.width = img.width + "500px";
+// }
+

@@ -47,8 +47,10 @@ body{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/šedé_pozadí.jpg);
+    /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/šedé_pozadí.jpg); */
+    background-color: #52796f;
 }
+
 
 /* nastavení barvy textu (nadpisu) h1-h5 v section_+ section_2*/
 .otazky h1,
@@ -354,7 +356,7 @@ body{
     background-color: #52796f;
     color: #fff;
     margin-top: 1vw;
-    padding: 0.2vw 0.4vw;
+    padding: 1.8vw 2vw;
     cursor: pointer;
     border-radius: 1vw;
     line-height: 1vw;
@@ -373,3 +375,17 @@ body{
 }
 
 /*  KONEC PÁTRACÍ APLIKACE*/
+
+
+/*
+            MAIN
+            GALERIE 
+                        */
+
+/* .galerie{
+    display: flex;
+    justify-content: space-around;
+    background-color: #52796f;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+} */
