@@ -202,7 +202,7 @@ function skrytPatek() {
     document.getElementById("skrytBtn_Pa").style.display = "block"
     document.getElementById("skrytBtn_Pa").style.display = "none"
 }
-
+/*-----------------------------------------------------------------*/
 
 
 /*  
@@ -230,7 +230,7 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
 
         setTimeout(function() {
             document.getElementById("vysledek_ap").innerHTML = ""
-        }, 1000);
+        }, 2000);
 
     } else{
         document.getElementById("vysledek_ap").innerHTML = "😍Nejste v Evidenci hledaných osob.😍"
@@ -239,9 +239,8 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
 
     setTimeout(function() {
             document.getElementById("vysledek_ap").innerHTML = ""
-        }, 1000);
+        }, 2000);
 });
-
 /*-----------------------------------------------------*/
 
 
@@ -256,8 +255,9 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
             document.getElementById("text_overeni").innerHTML = `Vstup zamítnut <br> Nejste plnoletý`
             document.getElementById("text_overeni").style.color = "red"
             document.getElementById("text_overeni").style.border = "3px solid red"
+
         } else{
-            document.getElementById("text_overeni").innerHTML = `Víteje u obsahu 18+`;
+            document.getElementById("text_overeni").innerHTML = `Vstup povolen.`;
             document.getElementById("text_overeni").style.color = "green"
             document.getElementById("text_overeni").style.border = "3px solid green"
         }

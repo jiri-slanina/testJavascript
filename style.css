@@ -494,6 +494,16 @@ body{
 
 
 
+.galerie{
+    display: flex;
+    justify-content: space-around;
+}
+
+.galerie img{
+    width: 35vw;
+}
+
+
 
 
 
