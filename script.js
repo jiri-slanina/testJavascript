@@ -266,3 +266,9 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
     /*  KONEC KONTROLY VĚKU */
 
     
+/*      INFORMACE K MISCE / GALERIE
+                                    */
+
+function zobrazInfo_1(){
+    document.getElementById("info_1").innerHTML = `Miska z Olše (placatka) <br> Průměr: 200_mm, <br> Výška 110_mm`
+}
