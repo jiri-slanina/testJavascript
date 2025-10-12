@@ -31,3 +31,26 @@ body img{
         width: 60vw;
     }
 }
+
+
+body a{
+    margin: 0 auto;
+    width: 15vw;
+    font-size: clamp(16px, 2.5vw, 36px);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(0, 255, 255, 0.712);
+}
+
+@media(max-width: 700px){
+    body a{
+        width: 50vw;
+    }
+}
+
+body a:hover{
+    background-color: #6c757d;
+    color: #fff;
+}

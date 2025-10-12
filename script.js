@@ -302,3 +302,6 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
 function zobrazInfo_1(){
     document.getElementById("info_1").innerHTML = `Miska z Olše (placatka) <br> <span class="rozmery_placatky">Průměr:</span> 200_mm, <br> <span class="rozmery_placatky">Výška:</span>110_mm`
 }
+
+
+
