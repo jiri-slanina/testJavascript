@@ -421,6 +421,7 @@ body{
     cursor: pointer;
     border-radius: 1vw;
     line-height: 1vw;
+    font-size: clamp(12px, 2vw, 20px);
 }
 
 /*  zvětšení paddingu u tlačítka ověřit při dosažení 500px a méně*/
