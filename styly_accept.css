@@ -10,25 +10,25 @@ body{
 
 body img{
     display: block;
-    margin: 0 auto;
-    width: 30%;
+    margin: 3vw auto;
+    width: 50%;
 }
 
 @media(max-width:900px){
     body img{
-        width: 45%;
+        width: 60%;
     }
 }
 
 @media(max-width:600px){
     body img{
-        width: 50vw;
+        width: 70vw;
     }
 }
 
 @media(max-width:400px){
     body img{
-        width: 60vw;
+        width: 80vw;
     }
 }
 
