@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #52796f;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+header h1{
+    font-size: clamp(18px, 2.2vw, 36px);
+}
+
+
+.profil{
+    width: 90%;
+    margin: 2vw auto;
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
+.profil img{
+    width: 30vw;
+    display: inline-block;
+    border-radius: 2vw;
+}
+
+@media(max-width: 500px) {
+    .profil img{
+        width: 50vw;
+    }
+}
+
+.profil .udaje_profilu{
+    font-size: clamp(20px, 2.5vw, 36px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media(max-width: 500px) {
+    .profil .udaje_profilu{
+        font-size: clamp(14px, 2vw, 28px);
+    }
+}
+
+.profil .udaje_profilu .nazev{
+    font-size: clamp(22px, 2vw, 38px);
+    text-decoration: underline 2px solid #52796f;
+}

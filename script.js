@@ -300,8 +300,43 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
                                     */
 
 function zobrazInfo_1(){
-    document.getElementById("info_1").innerHTML = `Miska z Olše (placatka) <br> <span class="rozmery_placatky">Průměr:</span> 200_mm, <br> <span class="rozmery_placatky">Výška:</span>110_mm`
+    document.getElementById("info_1").innerHTML = `Miska z Olše (placatka) <br> <span class="rozmery_placatky">Průměr:</span>200_mm <br> <span class="rozmery_placatky">Výška:</span>110_mm`
+
+    setTimeout(function(){
+        document.getElementById("info_1").innerHTML = ""
+    }, 4000);
 }
 
+/*          konec sekce galerie / misky         */
 
 
+/*  SEKCE LOGIN PŘIHLÁŠENÍ UŽIVATELE    
+                                        */
+let email = "admin@123.cz"
+let password = "admin"
+
+document.getElementById("login_form").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    let input = document.getElementById("email_input").value;
+    let pass = document.getElementById("pass_input").value;
+    let text = document.getElementById("text_login");
+
+
+    if(input === ""){
+        alert("zadejte platný e-mail")
+    }
+    else if(pass === "") {
+        alert("Zadejte platné heslo")
+    } else if(input === email && pass === password){
+        text.innerHTML = "Přihlášení proběhlo úspěšně 😊"
+        text.style.color = "green"
+        setTimeout(function(){
+            text.innerHTML="Přihlášení proběhlo úspěšně 😊"
+            window.location.href = "profil.html"
+        }, 500);
+    } else{
+        text.innerHTML = "Zadali jste nesprávné přihlašovací údaje."
+        text.style.color = "red"
+    }
+});
