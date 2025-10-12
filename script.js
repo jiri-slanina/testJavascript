@@ -325,16 +325,15 @@ document.getElementById("login_form").addEventListener("submit", function(event)
 
     if(input === ""){
         alert("zadejte platný e-mail")
-    }
-    else if(pass === "") {
+    } else if(pass === "") {
         alert("Zadejte platné heslo")
     } else if(input === email && pass === password){
-        text.innerHTML = "Přihlášení proběhlo úspěšně 😊"
+        text.innerHTML = `Ahoj Jiří, <br> Přihlášení proběhlo úspěšně 😊`
         text.style.color = "green"
         setTimeout(function(){
             text.innerHTML="Přihlášení proběhlo úspěšně 😊"
             window.location.href = "profil.html"
-        }, 500);
+        }, 2500);
     } else{
         text.innerHTML = "Zadali jste nesprávné přihlašovací údaje."
         text.style.color = "red"
