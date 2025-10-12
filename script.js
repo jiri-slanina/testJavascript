@@ -232,6 +232,9 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
         document.getElementById("vysledek_ap").innerHTML = "😜Jsi v Evidenci hledaných osob.😜"
         document.getElementById("vysledek_ap").style.color = "red"
 
+        document.getElementById("vyska").value = "";
+        document.getElementById("vaha").value = "";
+
         setTimeout(function() {
             document.getElementById("vysledek_ap").innerHTML = ""
         }, 2000);
@@ -239,6 +242,9 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
     } else{
         document.getElementById("vysledek_ap").innerHTML = "😍Nejste v Evidenci hledaných osob.😍"
         document.getElementById("vysledek_ap").style.color = "blue"
+
+        document.getElementById("vyska").value = "";
+        document.getElementById("vaha").value = "";
     }
 
     setTimeout(function() {
@@ -260,10 +266,14 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
             document.getElementById("text_overeni").style.color = "red"
             document.getElementById("text_overeni").style.border = "3px solid red"
 
+            document.getElementById("zadej_vek").value = "";
+
         } else{
             document.getElementById("text_overeni").innerHTML = `Vstup povolen.`;
             document.getElementById("text_overeni").style.color = "green"
             document.getElementById("text_overeni").style.border = "3px solid green"
+
+            document.getElementById("zadej_vek").value = "";
         }
     });
 
