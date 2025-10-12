@@ -506,7 +506,17 @@ body{
     width: 35vw;
 }
 
+#info_1{
+    font-size: clamp(12px, 2vw, 20px);
+}
 
+
+.rozmery_placatky{
+    font-size: clamp(16px, 2vw, 26px);
+    padding: 15px 12px;
+    color: #52796f;
+    text-decoration: underline 2px solid #52796f;
+}
 
 
 
