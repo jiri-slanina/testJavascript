@@ -591,8 +591,9 @@ body{
 
 .help_login{
     width: 15vw;
-    text-align: center;
+    text-align: left;
     margin-left: 5vw;
+    padding: 5px 10px;
     background-color: #52796f;
     font-size: clamp(10px, 1.8vw, 20px);
     color: #fff;
