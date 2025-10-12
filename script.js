@@ -10,8 +10,13 @@ let heslo = "2589"; //heslo které bude požadováno
 
 document.getElementById("kontrolaBtn").addEventListener("click", function(){ // tady mi po kliknutí na tlacitko udela nasledujici
     let input = document.getElementById("hesloInput").value;
-// uložena proměnná input - hesloInput
-    if(input === heslo){ // čisla input + heslo musí být stejné
+    let hodnota = document.getElementById("hesloInput").value;
+
+    if(hodnota === "") {
+        alert("Prosím, zadejte hodnoty!")
+    }
+
+    else if(input === heslo){ // čisla input + heslo musí být stejné
         document.getElementById("vysledek").innerHTML =`Zadali jste správné heslo <br>😊`
         document.getElementById("vysledek").style.color = "green"
         document.getElementById("hesloInput").value = "";
@@ -228,7 +233,14 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
         }
     }
 
-    if(nalezeno){
+    if(input_1 === ""){
+        alert("Zadejte výšku!")
+    }
+    else if(input_2 === ""){
+        alert("Zadejte váhu!")
+    }
+
+    else if (nalezeno){
         document.getElementById("vysledek_ap").innerHTML = "😜Jsi v Evidenci hledaných osob.😜"
         document.getElementById("vysledek_ap").style.color = "red"
 
@@ -260,8 +272,12 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
 
     document.getElementById("overit_vek").addEventListener("click", function(){
         let input = document.getElementById("zadej_vek").value;
+        
+        if(input === ""){
+            alert("Zadej věk!")
+        }
 
-        if(input <= 17){
+        else if(input <= 17){
             document.getElementById("text_overeni").innerHTML = `Vstup zamítnut <br> Nejste plnoletý`
             document.getElementById("text_overeni").style.color = "red"
             document.getElementById("text_overeni").style.border = "3px solid red"
