@@ -14,6 +14,7 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){ // 
     if(input === heslo){ // čisla input + heslo musí být stejné
         document.getElementById("vysledek").innerHTML =`Zadali jste správné heslo <br>😊`
         document.getElementById("vysledek").style.color = "green"
+        document.getElementById("hesloInput").value = "";
 //zobrazi zpravu o spravnem hesle
 //napis se zobrazi zelenou barvou
         setTimeout(function(){
@@ -23,7 +24,10 @@ document.getElementById("kontrolaBtn").addEventListener("click", function(){ // 
     } else { // kdyz se heslo neshoduje - vypíše
         document.getElementById("vysledek").textContent = "Zadali jste chybné heslo.😞"
         document.getElementById("vysledek").style.color = "red"
+
+        document.getElementById("hesloInput").value = ""
     }
+
 })
 /*------------------------------
 */
@@ -225,7 +229,7 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
     }
 
     if(nalezeno){
-        document.getElementById("vysledek_ap").innerHTML = "😜Jste v Evidenci hledaných osob.😜"
+        document.getElementById("vysledek_ap").innerHTML = "😜Jsi v Evidenci hledaných osob.😜"
         document.getElementById("vysledek_ap").style.color = "red"
 
         setTimeout(function() {
@@ -270,5 +274,5 @@ document.getElementById("kontrola_tl").addEventListener ("click", function(){
                                     */
 
 function zobrazInfo_1(){
-    document.getElementById("info_1").innerHTML = `Miska z Olše (placatka) <br> Průměr: 200_mm, <br> Výška 110_mm`
+    document.getElementById("info_1").innerHTML = `Miska z Olše (placatka) <br> <span class="rozmery_placatky">Průměr:</span> 200_mm, <br> <span class="rozmery_placatky">Výška:</span>110_mm`
 }
