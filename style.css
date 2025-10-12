@@ -251,7 +251,7 @@ body{
 /* při max. vel. 500px, se obsah posune od vrchního obsahu o 30vw*/
 @media(max-width: 500px) {
     .kalendar{
-        margin-top: 30vw;
+        margin-top: 10vw;
     }
 }
 
@@ -386,7 +386,7 @@ body{
                              */
 /* box pátrací aplikace*/
 .patraci_aplikace{
-    width: 40vw;
+    width: 70vw;
     margin: 2vw auto;
     text-align: center;
     border: 3px solid #52796f;
@@ -451,7 +451,7 @@ body{
                             */
 
 .kontrola_veku{
-    width: 30vw;
+    width: 70vw;
     margin: 2vw auto;
     text-align: center;
     border: 3px solid #52796f;
@@ -485,7 +485,7 @@ body{
 }
 
 #text_overeni{
-    width: 25vw;
+    width: 40vw;
     margin: 1vw auto;
     font-size: clamp(16px, 2.2vw, 26px);
     padding: 0.5vw 1vw;
@@ -524,6 +524,15 @@ body{
     cursor: pointer;
     padding: 5px 10px;
     text-transform: uppercase;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #52796f;
+    transition: background 0.3s, color 0.3s;
+}
+
+.galerie button:hover{
+    background-color: #fff;
+    color: #000;
 }
 /*  konec sekce galerie misky  */
 
@@ -585,6 +594,7 @@ body{
     background-color: #52796f;
     font-size: clamp(10px, 1.8vw, 20px);
     color: #fff;
+    margin-bottom: 20px;
 }
 
 @media(max-width: 500px){
@@ -598,6 +608,16 @@ body{
 }
 
 
+.galerie_2{
+    width: 100%;
+    display: flex;
+    background-color: #52796fc9;
+    margin-top: 20px;
+}
+
+.galerie_2 img{
+    width: 25vw;
+}
 
 
 
